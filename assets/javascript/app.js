@@ -60,7 +60,7 @@ function submitAns() {
 };
 	
 //Creating question timer variables & functions
-var timeLeft = 8;
+var timeLeft = 60;
 var increment;
 
 function runTimer() {
@@ -74,15 +74,15 @@ function decrement() {
 		stopTimer();
 		userAns.length = 0;		
 		//Record user answer to question
-		var userSelection = $("#responses input:radio[name=optionsRadios]:checked").val();
-		userAns.push(userSelection);
+		
+		
 		console.log(userAns);
-		nextQ();
+		
 	};
 };
 
 function resetTimer() {
-	timeLeft = 8;
+	timeLeft = 60;
 	$("#time-left").html("Time remaining: " + timeLeft + " seconds");
 };
 
@@ -174,8 +174,8 @@ function clearQ() {
 //Showing whether answer was right/wrong
 function checkQ() {
 	clearQ();
-	var correctAnswer = questions[questionCounter].choicesAnswer;
-	if (userAns[0] == questions[questionCounter].choicesAnswer) {
+	var correctAnswer = questions[questionCounter].answer;
+	if (userAns[0] == questions[questionCounter].answer) {
 		$("#content").append('<h3>'+"Congratulations! You chose the right answer!" + '</h3>');
 		correct++;
 		displayTimer();
