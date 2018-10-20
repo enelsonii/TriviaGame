@@ -11,45 +11,35 @@
 </head>
 
 <body>
-    <div class="jumbotron" id="twd-jumbo">
-        <h1 id="heading">The Walking Dead Trivia Game</h1>
+    <div class="jumbotron">
+        <div class="content">
+            <h1 id="heading">NBA Trivia</h1>
+            <h3 class="lead">Do you know your NBA? Test you knowledge</h3>
+            <hr class="my-4">
+            <p> Select Start to test you NBA knowledge.</p>
+        </div>
     </div>
 
     <div class="row">
-        <div class="col-md-1">
-        </div>
-
-        <div class="col-md-10">
-            <div class="row">
-                <div class="col-md-4">
-                </div>
-
-                <div class="col-md-4 text-center">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="well">
-                                <!-- <h4 id="time-left">
-                                    Time remaining: 60 seconds
-                                </h4> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <!-- <div id="content">
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/Images/nba-jam-team-history-franchise-duo-players.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <!-- Time ad start button -->
+                    <h4 id="time-left">
+                        Time remaining: 60 seconds
+                    </h4>
+                    <div id="content"></div>
                 </div>
             </div>
-            <br>
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- <div id="quiz">
+        </div>
+   
+   
+        <div class="col">
+            <!-- Game Stats  -->
+            <div class="card1">
+                <div class="card-body">
+                    <div id="quiz">
                         <form>
                             <div class="form-group">
                                 <div class="radio">
@@ -61,12 +51,9 @@
                             <br><br>
                             <div id="submit-div"></div>
                         </form>
-                    </div> -->
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-md-1">
         </div>
     </div>
     <script src="assets/javascript/app.js"></script>
